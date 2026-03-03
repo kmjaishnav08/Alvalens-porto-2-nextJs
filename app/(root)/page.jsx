@@ -1,6 +1,5 @@
-// Copyright (C) 2025 Alvalen Bilyunazra
-// This file is part of Alvalens-porto-2-nextJs.
-// Licensed under the GNU GPL v3.0. See LICENSE for details.
+// Copyright (C) 2026 Jaishnav
+// Customized for Aerospace & AI Portfolio
 
 "use client";
 import { useState, useEffect } from "react";
@@ -11,10 +10,6 @@ import { FullPageWrapper, Section, useFullPage } from "@alvalens/react-fullpage-
 
 // components
 import Button from "@/components/Button";
-import Me from "@/public/image/alvalen-front.webp";
-import MeAbout from "@/public/image/me2.jpg";
-import Setup from "@/public/image/setup.jpg";
-import ProjectAll from "@/public/image/projects.png";
 import Hr from "@/components/Hr";
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -77,12 +72,11 @@ const MyPage = () => {
 						<div className="block md:hidden col-span-1 mx-auto my-10">
 							<div className="bg-slate-500 rounded-full h-60 w-60 grayscale hover:grayscale-0 transition-all ease duration-300">
 								<Image
-									src={Me}
+									src="/aerospace_study.jpg"
 									width={500}
 									height={500}
 									className="rounded-full w-full h-full object-cover "
-									alt="Alvalens"
-									placeholder="blur"
+									alt="Jaishnav Aerospace"
 								/>
 							</div>
 						</div>
@@ -94,7 +88,7 @@ const MyPage = () => {
 								delay: 0.2,
 								type: "spring",
 							}}>
-							Alvalen Shafel
+							Jaishnav
 						</motion.h3>
 						<motion.h1
 							className="text-black text-4xl md:text-6xl lg:text-6xl 2xl:text-8xl font-bold my-2 md:my-5"
@@ -104,7 +98,7 @@ const MyPage = () => {
 								delay: 0.3,
 								type: "spring",
 							}}>
-							Full Stack Software Engineer
+							Future Aerospace Engineer & AI Developer
 						</motion.h1>
 						<motion.p
 							className="title text-md 2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
@@ -114,12 +108,7 @@ const MyPage = () => {
 								delay: 0.4,
 								type: "spring",
 							}}>
-							Hi! I&rsquo;am Alvalen, A fullstack software
-							engineer specializing in modern Web Development with
-							a growing focus on Artificial Intelligence. I
-							architect scalable, production-ready engines—from
-							high-traffic Java microservices to RAG-powered SaaS
-							platforms.
+							Hi! I&rsquo;m Jaishnav, a CBSE Class 12 student on a rigorous pathway to a B.Tech in Aerospace Engineering. I specialize in the intersection of advanced physics and Artificial Intelligence, currently architecting my own AI assistant—Project J.A.R.V.I.S.—while targeting top-tier engineering institutes via the JEE.
 						</motion.p>
 						<motion.div
 							className="buttons flex flex-row justify-center items-center space-x-4 mt-10"
@@ -130,12 +119,8 @@ const MyPage = () => {
 								type: "spring",
 							}}>
 							<Button variation="primary">
-								<Link
-									href={"/docs/cv.pdf"}
-									target="_blank"
-									rel="noopener noreferrer"
-									download>
-									Download CV
+								<Link href="/projects">
+									View Initiatives
 								</Link>
 							</Button>
 							<Button variation="secondary">
@@ -153,11 +138,10 @@ const MyPage = () => {
 						}}>
 						<div className="rounded-full h-auto w-auto max-w-[26vw] lg:px-12 grayscale hover:grayscale-0 transition-all ease duration-300">
 							<Image
-								src={Me}
+								src="/aerospace_study.jpg"
 								width={400}
 								height={550}
-								placeholder="blur"
-								alt="Alvalens"
+								alt="Jaishnav Aerospace"
 								className="rounded-full w-full h-full object-cover"
 							/>
 						</div>
@@ -186,12 +170,11 @@ const MyPage = () => {
 								damping: 20,
 							}}>
 							<Image
-								src={MeAbout}
+								src="/ai_assistant.png"
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
-								alt="Alvalens"
-								placeholder="blur"
+								alt="Jaishnav AI"
 							/>
 						</motion.div>
 					</div>
@@ -215,8 +198,7 @@ const MyPage = () => {
 								delay: 0.2,
 								type: "spring",
 							}}>
-							A brief introduction my journey as a software
-							engineer.
+							A brief look into my journey through advanced physics, aeronautics, and AI.
 						</motion.p>
 						<motion.div
 							initial={{ y: 40, opacity: 0 }}
@@ -254,12 +236,11 @@ const MyPage = () => {
 								damping: 20,
 							}}>
 							<Image
-								src={ProjectAll}
+								src="/nss_habitat.jpg"
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
-								alt="Alvalens Setup"
-								placeholder="blur"
+								alt="Space Settlement"
 							/>
 						</motion.div>
 					</div>
@@ -272,7 +253,7 @@ const MyPage = () => {
 								delay: 0.1,
 								type: "spring",
 							}}>
-							My Projects
+							My Initiatives
 						</motion.h1>
 						<Hr />
 						<motion.p
@@ -283,10 +264,10 @@ const MyPage = () => {
 								delay: 0.2,
 								type: "spring",
 							}}>
-							Selected works that I&apos;ve built over the years.
+							Research, concepts, and technical projects
 							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
 								{" "}
-								and currently working on.
+								I am currently developing.
 							</span>
 						</motion.p>
 						<motion.div
@@ -297,7 +278,7 @@ const MyPage = () => {
 								type: "spring",
 							}}>
 							<Button variation="primary">
-								<Link href="/projects">Learn More</Link>
+								<Link href="/projects">Explore Projects</Link>
 							</Button>
 						</motion.div>
 					</div>
@@ -325,12 +306,11 @@ const MyPage = () => {
 								damping: 20,
 							}}>
 							<Image
-								src={Setup}
+								src="/aerospace_facts.jpg"
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
-								alt="Alvalens Setup"
-								placeholder="blur"
+								alt="Aerospace Setup"
 							/>
 						</motion.div>
 					</div>
@@ -354,9 +334,9 @@ const MyPage = () => {
 								delay: 0.2,
 								type: "spring",
 							}}>
-							Feel free to contact me if you have any{" "}
+							Feel free to reach out to discuss AI integration,
 							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
-								questions or just want to say hi.
+								{" "}aerospace concepts, or academic networking.
 							</span>
 						</motion.p>
 						<motion.p
@@ -367,14 +347,14 @@ const MyPage = () => {
 								delay: 0.3,
 								type: "spring",
 							}}>
-							<a href="mailto:Alvalen.shafel04@gmail.com?subject=Hello&body=Hello Alvalens,">
-								alvalen.shafel04@gmail.com
+							<a href="mailto:jaishnav.aerospace@gmail.com?subject=Hello&body=Hello Jaishnav,">
+								Contact Me
 							</a>
 						</motion.p>
 						{/* icons */}
 						<div className="flex justify-center items-center space-x-4">
 							<motion.a
-								href="mailto:Alvalen.shafel04@gmail.com?subject=Hello&body=Hello Alvalens,"
+								href="mailto:jaishnav.aerospace@gmail.com?subject=Hello&body=Hello Jaishnav,"
 								aria-label="Send email"
 								className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
 								initial={{ y: 40, opacity: 0 }}
@@ -390,7 +370,7 @@ const MyPage = () => {
 							</motion.a>
 
 							<motion.a
-								href="https://github.com/Alvalens"
+								href="#"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="GitHub profile"
@@ -407,7 +387,7 @@ const MyPage = () => {
 								/>
 							</motion.a>
 							<motion.a
-								href="https://www.instagram.com/alvalens_/"
+								href="#"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="Instagram profile"
@@ -424,7 +404,7 @@ const MyPage = () => {
 								/>
 							</motion.a>
 							<motion.a
-								href="https://www.linkedin.com/in/alvalen-shafel-8a081a254/"
+								href="#"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="LinkedIn profile"
@@ -437,23 +417,6 @@ const MyPage = () => {
 								}}>
 								<FontAwesomeIcon
 									icon={faLinkedin}
-									className="text-3xl"
-								/>
-							</motion.a>
-							<motion.a
-								href="https://discordapp.com/users/bloody#6118"
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="Discord profile"
-								className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
-								initial={{ opacity: 0, y: 40 }}
-								whileInView={{ opacity: 1, y: 0 }}
-								transition={{
-									y: { delay: 0.5 },
-									opacity: { delay: 0.6 },
-								}}>
-								<FontAwesomeIcon
-									icon={faDiscord}
 									className="text-3xl"
 								/>
 							</motion.a>
