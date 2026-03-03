@@ -72,11 +72,11 @@ const MyPage = () => {
 						<div className="block md:hidden col-span-1 mx-auto my-10">
 							<div className="bg-slate-500 rounded-full h-60 w-60 grayscale hover:grayscale-0 transition-all ease duration-300">
 								<Image
-									src="/aerospace_study.jpg"
+									src="/jai3.png"
 									width={500}
 									height={500}
 									className="rounded-full w-full h-full object-cover "
-									alt="Jaishnav Aerospace"
+									alt="Jai Headshot"
 								/>
 							</div>
 						</div>
@@ -138,10 +138,10 @@ const MyPage = () => {
 						}}>
 						<div className="rounded-full h-auto w-auto max-w-[26vw] lg:px-12 grayscale hover:grayscale-0 transition-all ease duration-300">
 							<Image
-								src="/aerospace_study.jpg"
+								src="/jai3.png"
 								width={400}
 								height={550}
-								alt="Jaishnav Aerospace"
+								alt="Jai Portrait"
 								className="rounded-full w-full h-full object-cover"
 							/>
 						</div>
@@ -170,11 +170,11 @@ const MyPage = () => {
 								damping: 20,
 							}}>
 							<Image
-								src="/ai_assistant.png"
+								src="/jai4.png"
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
-								alt="Jaishnav AI"
+								alt="Jai Whiteboard"
 							/>
 						</motion.div>
 					</div>
@@ -187,7 +187,7 @@ const MyPage = () => {
 								delay: 0.1,
 								type: "spring",
 							}}>
-							About Me
+							About Jai
 						</motion.h1>
 						<Hr />
 						<motion.p
@@ -198,7 +198,7 @@ const MyPage = () => {
 								delay: 0.2,
 								type: "spring",
 							}}>
-							A brief look into my journey through advanced physics, aeronautics, and AI.
+							A brief look into my journey through advanced physics, aeronautics, and AI concepts.
 						</motion.p>
 						<motion.div
 							initial={{ y: 40, opacity: 0 }}
@@ -236,11 +236,11 @@ const MyPage = () => {
 								damping: 20,
 							}}>
 							<Image
-								src="/nss_habitat.jpg"
+								src="/jai1.png"
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
-								alt="Space Settlement"
+								alt="Space Settlement Jai"
 							/>
 						</motion.div>
 					</div>
@@ -306,11 +306,11 @@ const MyPage = () => {
 								damping: 20,
 							}}>
 							<Image
-								src="/aerospace_facts.jpg"
+								src="/jai9.png"
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
-								alt="Aerospace Setup"
+								alt="Get in Touch Jai"
 							/>
 						</motion.div>
 					</div>
@@ -347,14 +347,14 @@ const MyPage = () => {
 								delay: 0.3,
 								type: "spring",
 							}}>
-							<a href="mailto:jaishnav.aerospace@gmail.com?subject=Hello&body=Hello Jaishnav,">
+							<a href="mailto:jaishnav.aerospace@gmail.com?subject=Hello&body=Hello Jai,">
 								Contact Me
 							</a>
 						</motion.p>
 						{/* icons */}
 						<div className="flex justify-center items-center space-x-4">
 							<motion.a
-								href="mailto:jaishnav.aerospace@gmail.com?subject=Hello&body=Hello Jaishnav,"
+								href="mailto:jaishnav.aerospace@gmail.com?subject=Hello&body=Hello Jai,"
 								aria-label="Send email"
 								className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
 								initial={{ y: 40, opacity: 0 }}
@@ -430,3 +430,4 @@ const MyPage = () => {
 };
 
 export default MyPage;
+									
