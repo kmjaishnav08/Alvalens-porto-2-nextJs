@@ -12,9 +12,6 @@ import Skills from "./components/skills/skills.jsx";
 import Experience from "./components/experience.jsx";
 import Education from "./components/education.jsx";
 
-// images
-import Hero from "@/public/image/me2.jpg";
-
 import Hr from "@/components/Hr";
 import About from "./components/about/about.jsx";
 
@@ -32,21 +29,20 @@ export default function Page() {
 						className="text-black pr-10"
 					/>
 				</FixedButton>
-				<div className="relative h-screen  gap-4 p-10 flex justify-center items-center flex-col mb-10 overflow-hidden">
+				<div className="relative h-screen gap-4 p-10 flex justify-center items-center flex-col mb-10 overflow-hidden">
 					{/* hero */}
-					<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
+					<div className="z-0 mb-48 md:mb-0 md:absolute top-1/4 md:right-[10%] md:-translate-y-16 ">
 						<motion.div
 							initial={{ scale: 1 }}
 							animate={{ scale: 1.6 }}
 							transition={{ ease: "circOut", duration: 1 }}
 							className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 ">
 							<Image
-								src={Hero}
-								alt="Alvalen Shafel"
+								src="/jai2.png"
+								alt="Jaishnav"
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
-								placeholder="blur"
 							/>
 						</motion.div>
 					</div>
@@ -56,9 +52,9 @@ export default function Page() {
 						</h1>
 						<Hr />
 						<p className="title text-xl mt-4 tracking-wider text-gray-900 leading-[1.7rem] mb-5 ">
-							A brief introduction my journey as a{" "}
+							A deep dive into my journey as an{" "}
 							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
-								software engineer.
+								Aerospace Engineering aspirant and AI developer.
 							</span>
 						</p>
 						<motion.div
